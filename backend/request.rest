@@ -1,0 +1,25 @@
+GET  http://localhost:5000/users/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJkaGFuaSIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaWF0IjoxNjM5OTczODY3LCJleHAiOjE2Mzk5NzM4ODd9.epRuXeDMS3sI6AP34zFBVGjCBRIsndtHJ_XOCSMd4wU
+###
+POST http://localhost:5000/login/
+Content-Type: application/json
+
+{
+    "email":"admin@gmail.com",
+    "password":"12345678"
+}
+
+###
+POST http://localhost:5000/users/
+Content-Type: application/json
+
+{
+    "name" : "dhani",
+    "email":"dhani123@gmail.com",
+    "password":"sukijan",
+    "confPassword":"sukijan"
+}
+###
+GET http://localhost:5000/token/
+###
+DELETE   http://localhost:5000/logout/
